@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen1 extends StatefulWidget {
-  const Screen1({super.key});
+class MindDeepRelax extends StatefulWidget {
+  const MindDeepRelax({super.key});
 
   @override
-  State<Screen1> createState() => _Screen1State();
+  State<MindDeepRelax> createState() => _MindDeepRelaxState();
 }
 
-class _Screen1State extends State<Screen1> {
+class _MindDeepRelaxState extends State<MindDeepRelax> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

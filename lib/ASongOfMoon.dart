@@ -12,7 +12,7 @@ class _Screen3State extends State<Screen3> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-      children: [
+      children: [ 
       Container(
       margin: EdgeInsets.fromLTRB(24, 47, 0, 0),
       width: 366,
@@ -30,8 +30,8 @@ class _Screen3State extends State<Screen3> {
       ]),
       ),
       Container(
-        child: Row(children: [
-          Padding(padding:  EdgeInsets.fromLTRB(23, 14, 10, 22),
+        child: Row(children: [  
+          Padding(padding:  EdgeInsets.fromLTRB(23, 14, 10, 22), 
           child: InkWell(
           child: Container(
             alignment: Alignment.center,
@@ -87,19 +87,21 @@ class _Screen3State extends State<Screen3> {
                   )),
           ))
           ),
-          Padding(padding:  EdgeInsets.fromLTRB(0, 14, 12, 22),
-          child: InkWell(
+          Expanded(child: 
+          Padding(padding:  EdgeInsets.fromLTRB(0, 14, 0, 22),
+            child: InkWell(
           child: Container(
           alignment: Alignment.center, 
-          width: 60,
+          width: 120,
           height: 32,
           decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(100)), color: Color.fromRGBO(230, 254, 255, 1)),
-          child: Text('Noven', textAlign: TextAlign.center, style: TextStyle(fontSize: 13, 
+          child: Text('November', textAlign: TextAlign.center, style: TextStyle(fontSize: 13, 
                   fontFamily: 'Plus Jakarta Sans', 
                   fontWeight: FontWeight.w500, 
                   color: Color.fromRGBO(3, 158, 162, 1)
                   )),
-          ))
+          ))      
+          )
           )
         ])
         ),
