@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:pr1/MindDeepRelax.dart';
-import 'package:pr1/Medinow.dart';
-import 'package:pr1/ASongOfMoon.dart';
+import 'package:pr1/core/db/data_base_helper.dart';
+import 'package:pr1/Screen.dart';
+import 'package:sqflite/sqflite.dart';
 
-void main() {
+
+Future<void> main() async {
+
+  await DataBaseHelper.instance.init();
   runApp(const MyApp());
 }
 
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ASongOfMoon(),
+      home: Screen(),
     );
-}
+  }
 }
