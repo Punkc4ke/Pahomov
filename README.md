@@ -13,7 +13,7 @@
 #### Код авторизации с помощью ссылки
 ![image](https://user-images.githubusercontent.com/95757935/228251141-e6c0c662-bd13-4fef-a0a0-885f94507daf.png)
 #### Письмо с ссылкой для авторизации
-![image](https://user-images.githubusercontent.com/95757935/228251179-0d9a6aa5-97cf-4e71-822f-1d10df3de3ba.png)
+![image](https://user-images.githubusercontent.com/95757935/228251488-9d38d0fc-2902-4238-ba48-bb816f6e5fd0.png)
 #### Авторизация с помощью ссылки
 ![image](https://user-images.githubusercontent.com/95757935/228251235-cf9dbec7-8284-4122-97cc-d043a7ce8164.png)
 #### Вывод: в ходе выполнения практической работы были реализованы функции авторизации пользователя по почте и логину, авторизации анонимного пользователя и авторизация в Firebase с использованием ссылок электронной почты.
