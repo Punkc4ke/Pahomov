@@ -70,6 +70,7 @@ class AppAccountingController extends ResourceController {
         ..values.category = accounting.category
         ..values.name = accounting.name
         ..values.description = accounting.description
+        ..values.transactionAmount = accounting.transactionAmount
         ..values.dateOfOperation = DateTime.now().toString();
       await qUpdateAccounting.update();
       return AppResponse.ok(
@@ -198,7 +199,7 @@ class AppAccountingController extends ResourceController {
 
         accountingId = createdAccounting.id!;
       });
-
+  
       final accountingData = await managedContext.fetchObjectWithID<Accounting>(accountingId);
 
       accountingData!.removePropertiesFromBackingMap(["user", "id", "deleted"]);
